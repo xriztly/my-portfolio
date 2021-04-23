@@ -13,7 +13,7 @@
         
        <v-toolbar-title class="text-uppercase" >
         <span style="color:#51c4d3; ">My</span>
-        <span style="color:#51c4d3; opacity: 80%;">Portfolio</span>
+        <span style="color:#51c4d3; opacity: 80%;">Portfolio A</span>
        </v-toolbar-title>
         
       </div>
