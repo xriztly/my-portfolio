@@ -1,0 +1,60 @@
+<v-app>
+    <v-app-bar
+      app
+      flat
+     class="#080808 grey--text"
+      dark
+    >
+      <v-app-bar-nav-icon class="hidden-md-and-up grey--text" @click.stop="drawer=!drawer"></v-app-bar-nav-icon>
+
+      <div class="d-flex align-center">
+        
+       <v-toolbar-title class="text-uppercase" >
+        <span style="color:#51c4d3; ">My</span>
+        <span style="color:#51c4d3; opacity: 80%;">Portfolio</span>
+       </v-toolbar-title>
+        
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        class="hidden-sm-and-down "
+        text
+       v-for="link in links"
+       :key="link.title"
+       route :to="link.route"
+
+      >
+        <span class="mr-2 " style="color:#51c4d3; opacity: 80%; " >{{link.title}}</span>
+      </v-btn>
+    </v-app-bar>
+
+<!-- for navigation drawer-->
+         <v-navigation-drawer style="background-color:#272727;"
+      v-model="drawer"
+      fixed
+      side
+      temporary
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+         
+        >
+          <v-list-item 
+          v-for="item in links"
+          :key="item.title"
+          route :to="item.route"
+          >
+            <v-list-item-title style="color:#51c4d3; opacity: 80%;">{{item.title}}</v-list-item-title>
+          </v-list-item>
+
+         
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+    
+  </v-app>
