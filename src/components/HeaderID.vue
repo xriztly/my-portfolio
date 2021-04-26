@@ -1,11 +1,11 @@
 <template>
- <div id="container">
+ <div >
     
     <v-app-bar
       app
       flat
-     class="#080808 grey--text"
-      dark
+     dark
+     
     >
       <v-app-bar-nav-icon class="hidden-md-and-up grey--text" @click.stop="drawer=!drawer"></v-app-bar-nav-icon>
 
@@ -76,7 +76,7 @@
     </v-navigation-drawer>
    
 
-
+<v-divider style="background-color:#51c4d3;"></v-divider>
  </div>
 
  
@@ -112,10 +112,7 @@ export default {
 </script>
 
 <style scoped>
-#container{
-  background-image: url("/assets/bg.jpg");
 
-}
 #edit{
  color:#51c4d3;
 }
@@ -124,6 +121,7 @@ export default {
   font-size: 25px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 </style>
 

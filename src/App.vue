@@ -26,9 +26,7 @@ export default {
 </script>
 
 <style scoped>
-#app {
-    background-color:#272727;
+main{
+  background-color:rgb(39 39 39) ;
 }
-
-
 </style>
