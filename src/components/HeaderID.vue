@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div id="container">
     
     <v-app-bar
       app
@@ -12,8 +12,8 @@
       <div class="d-flex align-center">
         
        <v-toolbar-title class="text-uppercase" >
-        <span style="color:#51c4d3; ">My</span>
-        <span style="color:#51c4d3; opacity: 80%;">Portfolio A</span>
+        <span style="color:#51c4d3; ">Developer</span>
+        <span style="color:#51c4d3; opacity: 80%;">mode  </span>
        </v-toolbar-title>
         
       </div>
@@ -112,6 +112,10 @@ export default {
 </script>
 
 <style scoped>
+#container{
+  background-image: url("/assets/bg.jpg");
+
+}
 #edit{
  color:#51c4d3;
 }

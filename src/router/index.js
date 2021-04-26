@@ -4,12 +4,18 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Skill from '../views/Skill.vue'
 import Contact from '../views/Contact.vue'
+import NotFound from '../views/NotFound.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
   },
@@ -28,6 +34,11 @@ const routes = [
     name: 'Contact',
     component: Contact
   },
+  {
+    path: '*',
+    name: 'page-not-found',
+    component: NotFound
+  }
 ]
 
 const router = new VueRouter({

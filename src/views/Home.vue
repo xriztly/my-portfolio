@@ -1,17 +1,33 @@
 <template>
   <div class="home">
-    
-   <v-carousel >
-      <v-carousel-item
-        v-for="(item,i) in items"
-        :key="i"
-        :src="item.src"
-      ></v-carousel-item>
-    </v-carousel>
-
-    <div id="style">
-      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed error accusantium soluta iste, fugit nam deserunt sit fuga dignissimos asperiores illum incidunt, iure voluptatem quae qui! Obcaecati, accusantium aut!</span>
-    </div>
+      <v-row 
+     
+   >
+        <v-col cols="12">
+          
+            <v-img
+              src="@/assets/para.jpg"
+              height="400"
+              class="white darken-4 text-center rounded-tl-xl rounded-br-xl"
+                
+            > 
+            <v-row style="padding-top:100px"  
+            align="center"
+            justify="center">
+              <v-col cols="8" class="text-center t" >
+                 <h2 style="color:#243248; font-family:san-serif; ">Hi!, I AM XRIZT</h2>
+              <h3 class="subheading" > 
+                 <span class="grey--text">I AM </span>
+                 <span class="teal--text">VUEJS/VUETIFY</span>
+                  <span class="grey--text"> DEVELOPER</span>
+              </h3>
+              </v-col>
+            </v-row>
+             
+            </v-img>
+       
+        </v-col>
+      </v-row>
   </div>
 
   
@@ -21,28 +37,6 @@
 // @ is an alias to /src
 
 export default {
- data () {
-    return {
-      items: [
-        {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-        },
-       
-      ],
-    }
-  },
-
  
 }
-
-  
 </script>
-
-
-<style scoped>
-#style{
- width:100%;
- height: 100px;
- background-color: grey;
-}
-</style>
