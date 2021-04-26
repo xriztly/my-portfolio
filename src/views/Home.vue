@@ -17,7 +17,7 @@
               <v-col cols="8" class="text-center t" >
                  <h2 style="color:#243248; font-family:san-serif; ">Hi!, I AM XRIZT</h2>
               <h3 class="subheading" > 
-                 <span class="grey--text">I AM </span>
+                 <span class="grey--text">I AM balalala </span>
                  <span class="teal--text">VUEJS/VUETIFY</span>
                   <span class="grey--text"> DEVELOPER</span>
               </h3>
